@@ -7,7 +7,7 @@ class Category(models.Model):
     """category"""
     name = models.CharField('Категории', max_length=150)
     description = models.TextField('Описание')
-    url = models.URLField(max_length=160)
+    url = models.SlugField(max_length=160)
 
     def __str__(self):
         return self.name
@@ -36,7 +36,7 @@ class Genre(models.Model):
     """Жанры"""
     name = models.CharField("Имя", max_length=100)
     description = models.TextField("Описание")
-    url = models.SlugField(max_lenght=160, unique=True)
+    url = models.SlugField(max_length=160, unique=True)
 
     def __str__(self):
         return self.name
@@ -48,7 +48,7 @@ class Genre(models.Model):
 
 class Movie(models.Model):
     """Фильмы"""
-    title = models.CharField("Название", max_lenght=100)
+    title = models.CharField("Название", max_length=100)
     tegline = models.CharField("Слоган", max_length=100, default='')
     description = models.TextField('Описание')
     poster = models.ImageField("Постер", upload_to='movies/')
@@ -110,7 +110,7 @@ class Rating(models.Model):
     """Рейтинг"""
     ip = models.CharField("IP адрес", max_length=15)
     star = models.ForeignKey(RatingStar, on_delete=models.CASCADE, verbose_name="звезда")
-    movies = models.ForeignKey(Movie, on_delete=models.CharField, verbose_name="фильм")
+    movies = models.ForeignKey(Movie, on_delete=models.CASCADE, verbose_name="фильм")
 
     def __str__(self):
         return f"{self.star} - {self.movies}"
