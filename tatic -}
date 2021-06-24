@@ -1,0 +1,29 @@
+[33mcommit 707a313756e9e4b43d3e93a9e5fb72674cd7dcdd[m[33m ([m[1;36mHEAD -> [m[1;32mdocker_v1[m[33m, [m[1;31morigin/docker_v1[m[33m)[m
+Author: unknown <you@example.com>
+Date:   Sun Jun 20 10:19:11 2021 +0300
+
+    lesson 7
+
+[33mcommit 8b2661512b772a5cc6add9b6b4c1ac4ba0fd227e[m
+Author: unknown <you@example.com>
+Date:   Sat Jun 19 22:27:07 2021 +0300
+
+    lesson 6
+
+[33mcommit 7bbc05f657e1f578d6b488d49db05d690b75f093[m
+Author: unknown <you@example.com>
+Date:   Sat Jun 19 13:57:17 2021 +0300
+
+    add models
+
+[33mcommit 04a82078cc0ef448a03408edef3f5a3d51cec2c0[m
+Author: unknown <you@example.com>
+Date:   Sat Jun 19 09:26:00 2021 +0300
+
+    docker connect
+
+[33mcommit 99cdebc951d9bdf13ccc2cd5207b39ad499a0ee8[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Vitalii <devoir98@gmail.com>
+Date:   Wed Jun 16 12:56:23 2021 +0300
+
+    empty django progect
