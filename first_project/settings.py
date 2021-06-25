@@ -80,10 +80,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'django_movie',
-        'USER': 'demo',
+        'USER': 'postgres',
         'HOST': 'localhost',
         'PORT': 5432,
-        'PASSWORD':'demo'
+        'PASSWORD':'root'
     }
 }
 
