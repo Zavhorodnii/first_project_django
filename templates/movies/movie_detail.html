@@ -18,7 +18,7 @@
             </div>
             <div class="desc1-right col-md-6 pl-lg-4">
                 <h3 class="editContent" style="outline: none; cursor: inherit;">
-                    ТЕРМИНАТОР: ТЕМНЫЕ СУДЬБЫ</h3>
+                    {{ movie.title }}</h3>
                 <h5 class="editContent">Terminator: Dark Fate</h5>
                 <ul>
                     <li style="list-style: none"><span><b>Год:</b> {{ movie.year }} </span></li>
@@ -29,8 +29,8 @@
                     <li style="list-style: none">
                                     <span><b>Режиссер:</b>
 
-                                        {% for derector in movie.derectors.all %}
-                                            {{ director.name }}
+                                        {% for director in movie.directors.all %}
+                                            <a href="{{ director.get_absolute_url }}">{{ director.name }}</a>
                                         {% endfor %}
 
                                     </span>
@@ -39,7 +39,7 @@
                                     <span><b>Актеры:</b>
 
                                         {% for actor in movie.actors.all %}
-                                            {{ actor.name }}
+                                            <a href="{{ actor.get_absolute_url }}">{{ actor.name }}</a>
                                         {% endfor %}
 
                                     </span>
@@ -113,7 +113,7 @@
         <div class="row sub-para-w3layouts mt-5">
 
             <h3 class="shop-sing editContent" style="outline: none; cursor: inherit;">
-                О фильме Терминатор: {{ movie.title }}</h3>
+                О фильме {{ movie.title }}</h3>
             <p>
                 {% for movieshots_ in movie.movieshots_set.all %}
                     <img src="{{ movieshots_.image.url }}" class="img-fluid" alt="{{ movieshots_.description }}">
